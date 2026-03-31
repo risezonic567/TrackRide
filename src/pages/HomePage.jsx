@@ -4,6 +4,7 @@ import TrainDestinationsPage from './TrainDesPage';
 import TestimonialsPage from './TestimonialPage';
 import FAQPage from './FaqPage';
 import { Link } from 'react-router-dom';
+import AboutUsPage from './AboutPage';
 
 export default function HeroSinglePage() {
     return (
@@ -131,7 +132,7 @@ export default function HeroSinglePage() {
                 </div>
             </div>
         </div>
-        
+        <AboutUsPage/>
         <TrainDestinationsPage/>
         <TestimonialsPage/>
         <FAQPage/>
