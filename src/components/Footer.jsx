@@ -40,7 +40,7 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
                         <li>
-                            <Link to="tel:+18448215950" className="flex items-start gap-3 group">
+                            <Link to="tel:+ 866 307 5957" className="flex items-start gap-3 group">
                                 <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
                                     <Phone size={18} className="text-yellow-500 group-hover:text-black" />
                                 </div>
