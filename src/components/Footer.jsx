@@ -40,13 +40,13 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
                         <li>
-                            <Link to="tel:+ 866 307 5957" className="flex items-start gap-3 group">
+                            <Link to="tel:+1 866 307 5957" className="flex items-start gap-3 group">
                                 <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
                                     <Phone size={18} className="text-yellow-500 group-hover:text-black" />
                                 </div>
                                 <div>
                                     <p className="text-xs text-black uppercase">Call Us Anytime</p>
-                                    <span className="text-black font-semibold">+ 866 307 5957 </span>
+                                    <span className="text-black font-semibold">+1 866 307 5957 </span>
                                 </div>
                             </Link>
                         </li>

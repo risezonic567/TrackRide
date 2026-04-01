@@ -44,10 +44,10 @@ export default function Navbar() {
 
             {/* CALL BUTTON */}
             <Link
-              to="tel:+866 307 5957"
+              to="tel:+1 866 307 5957"
               className="hidden sm:flex bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-800 transition"
             >
-              <Phone size={20} />+ 866 307 5957
+              <Phone size={20} />+1 866 307 5957
             </Link>
 
             {/* MOBILE MENU BUTTON */}

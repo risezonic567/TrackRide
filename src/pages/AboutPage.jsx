@@ -106,7 +106,7 @@ export default function AboutUsPage() {
                     "Hamari team 24 ghante aapke har sawal ka jawab dene ke liye taiyar hai."
                 </p>
                 <button className="px-10 py-4 bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95">
-                    <Link to="tel:866 307 5957 ">
+                    <Link to="tel:+1 866 307 5957 ">
                     Connect With Our Experts
                     </Link>
                 </button>

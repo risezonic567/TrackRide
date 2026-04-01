@@ -125,7 +125,7 @@ export default function HeroSinglePage() {
 
                             {/* BUTTON */}
                             <button className="w-full py-4 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-black text-lg rounded-xl transition-all shadow-[0_10px_40px_rgba(250,204,21,0.5)] flex items-center justify-center gap-3 active:scale-[0.98]">
-                               <Link to="tel:866 307 5957 "> Book Now</Link>
+                               <Link to="tel:+1 866 307 5957 "> Book Now</Link>
                             </button>
                         </div>
                     </div>

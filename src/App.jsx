@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import TrainHomepage from './pages/HomePage'
+import HeroSinglePage from './pages/HomePage'
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
   <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<TrainHomepage/>}/>
+      <Route path='/' element={<HeroSinglePage/>}/>
     </Routes>
     <Footer/>
   </BrowserRouter>

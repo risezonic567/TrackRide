@@ -158,7 +158,7 @@ export default function TrainDestinationsPage() {
       </div>
 
       <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-red-600/30 transition-all hover:scale-105 block mx-auto mt-12 active:scale-95">
-        <Link to="tel:+866 307 5957" className="flex items-center gap-2">
+        <Link to="tel:+1 866 307 5957" className="flex items-center gap-2">
           Enquire About Rail Passes
         </Link>
       </button>
