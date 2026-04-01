@@ -1,6 +1,5 @@
 import { Phone } from "lucide-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 // Main nav links
@@ -19,13 +18,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-4">
 
           {/* LOGO */}
-          <Link to="/" className="flex items-center">
+          <HashLink to="/" className="flex items-center">
             <img
               src="/images/Track Ride Logo Png.png"
               alt="logo"
               className="h-13 md:h-16"
             />
-          </Link>
+          </HashLink>
 
           {/* DESKTOP NAV */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -44,12 +43,12 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
 
             {/* CALL BUTTON */}
-            <Link
+            <HashLink
               to="tel:+1 866 307 5957"
               className="hidden sm:flex bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-800 transition"
             >
               <Phone size={20} />+1 866 307 5957
-            </Link>
+            </HashLink>
 
             {/* MOBILE MENU BUTTON */}
             <button
