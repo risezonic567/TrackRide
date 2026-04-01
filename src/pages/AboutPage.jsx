@@ -42,14 +42,10 @@ export default function AboutUsPage() {
                             Our Mission
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            Airlines Ticket Booking (Rail Division) mein humara maqsad sirf tickets bechna nahi, 
-                            balki aapke safar ko yaadgaar banana hai. Humne dekha ki train booking aksar complex 
-                            aur slow hoti thi, isliye humne ek aisa platform banaya jo fast, secure aur 
-                            transparent ho.
+                            At Airlines Ticket Booking (Rail Division), our goal is not just to sell tickets, but to make your journey memorable. We noticed that train booking was often complex and slow, so we created a platform that is fast, secure, and transparent.
                         </p>
                         <p className="text-gray-600 text-lg leading-relaxed">
-                            Hum technology aur human support ka sahi mix use karte hain taaki aapko har 
-                            step par help mile.
+                            We use the right blend of technology and human support to ensure you get assistance at every step of your journey.
                         </p>
                         
                         <div className="grid grid-cols-2 gap-6 pt-6">
@@ -103,7 +99,7 @@ export default function AboutUsPage() {
             <div className="py-20 text-center bg-gray-50">
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Have Questions?</h3>
                 <p className="text-gray-500 mb-8 max-w-lg mx-auto italic">
-                    "Hamari team 24 ghante aapke har sawal ka jawab dene ke liye taiyar hai."
+                    "Our team is ready to answer all your questions 24 hours a day."
                 </p>
                 <button className="px-10 py-4 bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95">
                     <Link to="tel:+1 866 307 5957 ">
