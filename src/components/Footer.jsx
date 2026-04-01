@@ -1,5 +1,4 @@
 import { Mail, Phone, Train } from "lucide-react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
@@ -52,7 +51,7 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
                         <li>
-                            <Link to="tel:+1 866 307 5957" className="flex items-start gap-3 group">
+                            <HashLink to="tel:+1 866 307 5957" className="flex items-start gap-3 group">
                                 <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
                                     <Phone size={18} className="text-yellow-500 group-hover:text-black" />
                                 </div>
@@ -60,7 +59,7 @@ export default function Footer() {
                                     <p className="text-xs text-black uppercase">Call Us Anytime</p>
                                     <span className="text-black font-semibold">+1 866 307 5957 </span>
                                 </div>
-                            </Link>
+                            </HashLink>
                         </li>
                         <li className="flex items-start gap-3 group">
                             {/* <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
@@ -102,9 +101,9 @@ export default function Footer() {
   © {new Date().getFullYear()} <span className="text-yellow-600 font-bold">Risezonic</span>. All rights reserved.
 </p>
                     <div className="flex gap-6 text-xs text-gray-600">
-                        <Link to="/" className="hover:text-yellow-500">Security</Link>
-                        <Link to="/" className="hover:text-yellow-500">Sitemap</Link>
-                        <Link to="/" className="hover:text-yellow-500">Global Offices</Link>
+                        <HashLink to="/" className="hover:text-yellow-500">Security</HashLink>
+                        <HashLink to="/" className="hover:text-yellow-500">Sitemap</HashLink>
+                        <HashLink to="/" className="hover:text-yellow-500">Global Offices</HashLink>
                     </div>
                 </div>
             </div>

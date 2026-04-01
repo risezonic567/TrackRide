@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapPin, Calendar, Users, Train, Search, ShieldCheck, Globe } from 'lucide-react';
+import { MapPin, Calendar, Users, Train, ShieldCheck, Globe } from 'lucide-react';
 import TrainDestinationsPage from './TrainDesPage';
 import TestimonialsPage from './TestimonialPage';
 import FAQPage from './FaqPage';
