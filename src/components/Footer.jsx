@@ -30,7 +30,7 @@ export default function Footer() {
                             { name: 'Train Routes', path: '/train-routes' },
                             { name: 'Privacy Policy', path: '/' },
                             { name: 'Terms of Service', path: '/' }
-                        ].map((link) => (
+                        ].map((link) => (            // this
                             <li key={link.name}>
                                 <Link
                                     to={link.path}
