@@ -41,7 +41,7 @@ export default function HeroSinglePage() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
-                                Book train tickets easily and securely. Compare routes, prices, and schedules — all in one place.
+                                Book train tickets easily and securely. Compare routes, prices, and schedules — all in one place
                             </p>
                         </div>
 
