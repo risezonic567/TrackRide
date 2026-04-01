@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MapPin, Calendar, Users, Train, Search, ShieldCheck, Globe } from 'lucide-react';
 import TrainDestinationsPage from './TrainDesPage';
 import TestimonialsPage from './TestimonialPage';
@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 import AboutUsPage from './AboutPage';
 
 export default function HeroSinglePage() {
+
     return (
         <>
-        <div className="relative w-full min-h-screen overflow-hidden font-sans bg-slate-950">
+      <section id='home'>
+          <div className="relative w-full min-h-screen overflow-hidden font-sans bg-slate-950">
             
             {/* Background */}
             <div className="absolute inset-0 z-0">
@@ -132,7 +134,12 @@ export default function HeroSinglePage() {
                 </div>
             </div>
         </div>
+      </section>
+
+            <section id='about'> 
         <AboutUsPage/>
+            </section>
+            
         <TrainDestinationsPage/>
         <TestimonialsPage/>
         <FAQPage/>

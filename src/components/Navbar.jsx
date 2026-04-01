@@ -1,11 +1,12 @@
 import { Phone } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // Main nav links
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/" },
+  { name: "Home", href: "/#home" },
+  { name: "About Us", href: "/#about" },
   { name: "Contact", href: "/" },
 ];
 
@@ -29,13 +30,13 @@ export default function Navbar() {
           {/* DESKTOP NAV */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              <HashLink
                 key={link.name}
                 to={link.href}
                 className="text-gray-700 font-bold hover:text-yellow-800 transition"
               >
                 {link.name}
-              </Link>
+              </HashLink>
             ))}
           </nav>
 
@@ -92,13 +93,13 @@ export default function Navbar() {
           <ul className="space-y-2">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link
+                <HashLink
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
                   className="block p-3 text-lg font-medium rounded-lg hover:bg-teal-100"
                 >
                   {link.name}
-                </Link>
+                </HashLink>
               </li>
             ))}
           </ul>

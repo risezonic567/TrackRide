@@ -1,5 +1,6 @@
 import { Mail, Phone, Train } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
     return (
@@ -25,20 +26,22 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Quick Links</h3>
                     <ul className="space-y-3 text-sm">
                         {[
-                            { name: 'Home', path: '/' },
-                            { name: 'About Us', path: '/' },
+                            { name: 'Home', path: '/#home' },
+                            { name: 'About Us', path: '/#about' },
                             { name: 'Train Routes', path: '/train-routes' },
-                            { name: 'Privacy Policy', path: '/' },
+                            { name: 'Privacy Policy', path: '/privacy-policy' },
                             { name: 'Terms of Service', path: '/' }
                         ].map((link) => (            // this
                             <li key={link.name}>
-                                <Link
+
+                                <HashLink
+                                    smooth
                                     to={link.path}
                                     className="hover:text-yellow-600 transition-all flex items-center gap-2 group"
                                 >
                                     <span className="h-px w-0 bg-yellow-500 group-hover:w-3 transition-all duration-300"></span>
                                     {link.name}
-                                </Link>
+                                </HashLink>
                             </li>
                         ))}
                     </ul>
@@ -95,9 +98,9 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-black mt-16 pt-8 container mx-auto px-6 lg:px-16">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-black">
-                        © {new Date().getFullYear()} <span className="text-yellow-500 font-bold">Rail Booking Hub</span>. All rights reserved.
-                    </p>
+                   <p className="text-xs text-black">
+  © {new Date().getFullYear()} <span className="text-yellow-600 font-bold">Risezonic</span>. All rights reserved.
+</p>
                     <div className="flex gap-6 text-xs text-gray-600">
                         <Link to="/" className="hover:text-yellow-500">Security</Link>
                         <Link to="/" className="hover:text-yellow-500">Sitemap</Link>
