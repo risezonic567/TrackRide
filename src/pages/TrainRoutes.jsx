@@ -26,7 +26,6 @@ export default function TrainRoutes() {
     return (
         <>
             <div className="min-h-screen bg-[#f8f9fa] font-sans text-slate-900">
-                {/* Yellow Themed Header */}
                 <header className="bg-amber-400 text-slate-900 py-12 px-6 text-center border-b-2 border-slate-900 shadow-xl">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                         <div className="text-left">
@@ -51,7 +50,6 @@ export default function TrainRoutes() {
                     </div>
                 </header>
 
-                {/* Routes List */}
                 <main className="max-w-6xl mx-auto py-10 px-4">
                     <div className="space-y-6">
                         {filteredRoutes.map((route) => (
@@ -59,20 +57,17 @@ export default function TrainRoutes() {
                                 key={route.id}
                                 className="bg-white rounded-2xl border-2 border-slate-100 shadow-sm hover:border-amber-400 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row items-center p-6 gap-6"
                             >
-                                {/* Departure */}
                                 <div className="w-full md:w-32 text-center md:text-left">
                                     <div className="text-2xl font-black text-slate-900">{route.depart}</div>
                                     <div className="text-sm text-slate-500 font-bold uppercase tracking-tight">{route.from}</div>
                                 </div>
 
-                                {/* Timeline Visual (Yellow Accent) */}
                                 <div className="flex-1 flex items-center gap-4 w-full px-4">
                                     <div className="h-3 w-3 rounded-full bg-amber-500 ring-4 ring-amber-100"></div>
                                     <div className="flex-1 h-[3px] bg-slate-100 relative flex justify-center">
                                         <span className="absolute -top-7 text-[12px] text-slate-500 font-black uppercase tracking-widest bg-white px-2">
                                             {route.duration}
                                         </span>
-                                        {/* Train Icon Badge */}
                                         <div className="absolute -bottom-10">
                                             <div className="bg-slate-900 text-amber-400 py-1 px-4 rounded-full flex items-center gap-2 border-2 border-white shadow-sm">
                                                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM18 10H6V6h12v4z" /></svg>
@@ -83,13 +78,11 @@ export default function TrainRoutes() {
                                     <div className="h-3 w-3 rounded-full bg-slate-300"></div>
                                 </div>
 
-                                {/* Arrival */}
                                 <div className="w-full md:w-32 text-center md:text-right">
                                     <div className="text-2xl font-black text-slate-900">{route.arrive}</div>
                                     <div className="text-sm text-slate-500 font-bold uppercase tracking-tight">{route.to}</div>
                                 </div>
 
-                                {/* Action (Yellow Primary) */}
                                 <div className="w-full md:w-48 flex flex-row md:flex-col items-center justify-between md:justify-center border-t md:border-t-0 md:border-l-2 border-slate-50 pt-4 md:pt-0 md:pl-8">
                                     <div className="text-3xl font-black text-slate-900 mb-2">
                                         <span className="text-lg text-amber-600 mr-1">$</span>{route.price}
