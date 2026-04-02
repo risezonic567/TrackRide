@@ -3,10 +3,10 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HeroSinglePage from './pages/HomePage'
 import TrainRoutes from './pages/TrainRoutes'
 import AboutUsPage from './pages/AboutPage'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import HomePage from './pages/HomePage'
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
   <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<HeroSinglePage/>}/>
+      <Route path='/' element={<HomePage/>}/>
       <Route path='/#about' element={<AboutUsPage/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
 

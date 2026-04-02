@@ -29,7 +29,7 @@ export default function Footer() {
                             { name: 'About Us', path: '/#about' },
                             { name: 'Train Routes', path: '/train-routes' },
                             { name: 'Privacy Policy', path: '/privacy-policy' },
-                            { name: 'Terms of Service', path: '/' }
+                            // { name: 'Terms of Service', path: '/' }
                         ].map((link) => (            // this
                             <li key={link.name}>
 
@@ -74,19 +74,27 @@ export default function Footer() {
                 </div>
 
                 {/* Newsletter */}
+
                 <div>
-                    <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Newsletter</h3>
-                    <p className="text-xs mb-4">Get exclusive rail deals directly in your inbox.</p>
-                    <div className="flex">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="bg-white border text-balck border-slate-800 rounded-l-lg px-4 py-2 w-full focus:outline-none focus:border-yellow-500 text-sm"
-                        />
-                        <button className="bg-yellow-500 text-black px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-400 transition-colors">
-                            Go
-                        </button>
-                    </div>
+                    <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">
+                        Call
+                    </h3>
+
+                    <p className="text-xs mb-2">Enter Your Phone Number</p>
+
+                    {/* Input full width */}
+                    <input
+                        type="text"
+                        placeholder="Phone Number"
+                        className="bg-white border text-black border-slate-800 rounded-lg px-4 py-2 w-full focus:outline-none focus:border-yellow-500 text-sm"
+                    />
+
+                    {/* Button niche */}
+                    <button className="bg-yellow-500 text-black px-4 py-2 mt-3 w-full rounded-lg font-bold hover:bg-yellow-400 transition-colors">
+                        Call to Book
+                    </button>
+
+                    {/* Bottom text */}
                     <div className="mt-6 flex items-center gap-2 text-[10px] font-bold text-black uppercase tracking-widest">
                         <Train size={14} className="text-yellow-500" /> Secure Rail Booking
                     </div>
@@ -96,15 +104,11 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="border-t border-black mt-16 pt-8 container mx-auto px-6 lg:px-16">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                   <p className="text-xs text-black">
-  © {new Date().getFullYear()} <span className="text-yellow-600 font-bold">Risezonic</span>. All rights reserved.
-</p>
-                    <div className="flex gap-6 text-xs text-gray-600">
-                        <HashLink to="/" className="hover:text-yellow-500">Security</HashLink>
-                        <HashLink to="/" className="hover:text-yellow-500">Sitemap</HashLink>
-                        <HashLink to="/" className="hover:text-yellow-500">Global Offices</HashLink>
-                    </div>
+                <div className="flex flex-col  justify-between items-center gap-4">
+                    <p className="text-sm  text-black">
+                        © {new Date().getFullYear()} <span className="text-yellow-600 font-bold"></span>. All rights reserved.
+                    </p>
+                    
                 </div>
             </div>
         </footer>

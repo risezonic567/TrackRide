@@ -15,7 +15,7 @@ export default function AboutUsPage() {
         <section className="bg-white font-sans mt-10">
             {/* Simple Hero Section */}
             <div className="bg-black/60 py-24 px-6 text-center border-b-4 border-yellow-500">
-                <motion.h1 
+                <motion.h1
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-4xl md:text-6xl font-black text-white mb-6"
@@ -23,7 +23,7 @@ export default function AboutUsPage() {
                     We Move The <span className="text-yellow-500">Nation</span>
                 </motion.h1>
                 <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-                    Making rail travel accessible, affordable, and comfortable for everyone. 
+                    Making rail travel accessible, affordable, and comfortable for everyone.
                     From local commutes to cross-country adventures.
                 </p>
             </div>
@@ -31,7 +31,7 @@ export default function AboutUsPage() {
             {/* Content Section: Story & Image */}
             <div className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -47,7 +47,7 @@ export default function AboutUsPage() {
                         <p className="text-gray-600 text-lg leading-relaxed">
                             We use the right blend of technology and human support to ensure you get assistance at every step of your journey.
                         </p>
-                        
+
                         <div className="grid grid-cols-2 gap-6 pt-6">
                             <div className="flex items-start gap-3">
                                 <div className="text-yellow-600 p-1 bg-yellow-50 rounded-lg">
@@ -61,19 +61,24 @@ export default function AboutUsPage() {
                                 </div>
                                 <p className="text-sm font-bold text-slate-900 leading-tight">Industry Leading Tech</p>
                             </div>
+                            <div className='mx-auto'>
+                                <button className='py-2  bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40'>
+                                    <Link to="tel:+1 866 307 5957" className='text-2xl'>Call Us</Link>
+                                </button>
+                            </div>
                         </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         className="relative"
                     >
                         <div className="absolute -inset-4 bg-yellow-500 rounded-[2.5rem] -rotate-3 z-0"></div>
-                        <img 
-                            src="https://i.postimg.cc/fTgGD7mn/Home_Page_Banner_2.jpg" 
-                            alt="Train Journey" 
+                        <img
+                            src="https://i.postimg.cc/fTgGD7mn/Home_Page_Banner_2.jpg"
+                            alt="Train Journey"
                             className="relative z-10 rounded-[2rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
                         />
                     </motion.div>
@@ -103,7 +108,7 @@ export default function AboutUsPage() {
                 </p>
                 <button className="px-10 py-4 bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95">
                     <Link to="tel:+1 866 307 5957 ">
-                    Connect With Our Experts
+                        Connect With Our Experts
                     </Link>
                 </button>
             </div>

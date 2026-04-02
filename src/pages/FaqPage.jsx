@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, HelpCircle, MessageSquare, Phone, Train } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function FAQPage() {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -29,7 +30,7 @@ export default function FAQPage() {
     ];
 
     return (
-        <section className="py-15 bg-black/60  min-h-screen">
+        <section className="py-10 bg-black/60  min-h-screen">
             <div className="max-w-4xl mx-auto px-6">
                 
                 {/* Header */}
@@ -90,18 +91,7 @@ export default function FAQPage() {
                 </div>
 
                 {/* Support Contact Cards */}
-                {/* <div className="mt-20 grid md:grid-cols-2 gap-6">
-                    <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 flex items-start gap-5 group hover:border-yellow-500/50 transition-all">
-                        <div className="p-4 bg-yellow-500 rounded-2xl text-black">
-                            <MessageSquare size={24} />
-                        </div>
-                        <div>
-                            <h4 className="text-xl font-bold text-white mb-2">Chat with us</h4>
-                            <p className="text-sm text-gray-400 mb-4">Our AI assistant and human agents are ready to help.</p>
-                            <button className="text-yellow-500 font-bold text-sm hover:underline">Start a conversation →</button>
-                        </div>
-                    </div>
-
+                <div className="mt-10  gap-6">
                     <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 flex items-start gap-5 group hover:border-yellow-500/50 transition-all">
                         <div className="p-4 bg-slate-800 group-hover:bg-yellow-500 transition-colors rounded-2xl text-yellow-500 group-hover:text-black">
                             <Phone size={24} />
@@ -109,13 +99,13 @@ export default function FAQPage() {
                         <div>
                             <h4 className="text-xl font-bold text-white mb-2">Call Support</h4>
                             <p className="text-sm text-gray-400 mb-4">Available 24/7 for urgent booking issues.</p>
-                            <a href="tel:+18448215950" className="text-yellow-500 font-bold text-sm hover:underline">+1 (844) 821-5950 →</a>
+                            <Link to="tel:+1 866 307 5957 " className="text-yellow-500 font-bold text-sm hover:underline">+1 866 307 5957 →</Link>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 {/* Bottom Trust Line */}
-                <div className="mt-16 text-center">
+                <div className="mt-5 text-center">
                     <div className="flex justify-center items-center gap-4 text-gray-600 text-sm">
                         <span className="flex items-center text-white gap-1"><Train size={14}/> Reliable Schedules</span>
                         <span className="h-4 w-px bg-slate-800"></span>
