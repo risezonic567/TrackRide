@@ -64,10 +64,10 @@ export default function PrivacyPolicy() {
                     <p className="text-gray-700">
                         📞 Phone:{" "}
                         <button
-                            onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                            onClick={() => window.gtag_report_conversion('tel:+18001234567')}
                             className="text-yellow-600 cursor-pointer hover:underline"
                         >
-                            +1 866 307 5957
+                            +1 800-123-4567
 
                         </button>
                     </p>

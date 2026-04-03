@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 export default function Footer() {
     return (
         <footer className="bg-white/50 mt-10 text-black pt-16 pb-8 border-t-4 border-yellow-500">
-            <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-12">
 
                 <div className="space-y-6">
                     <div className="flex items-center gap-2">
@@ -49,30 +49,21 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
                         <li>
-                            <button onClick={() => window.gtag_report_conversion('tel:+18663075957')} className="flex items-start gap-3 group">
+                            <button onClick={() => window.gtag_report_conversion('tel:+18001234567')} className="flex items-start gap-3 group">
                                 <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
                                     <Phone size={18} className="text-yellow-500 group-hover:text-black" />
                                 </div>
                                 <div>
                                     <p className="text-xs text-black uppercase">Call Us Anytime</p>
-                                    <span className="text-black font-semibold cursor-pointer">+1 866 307 5957 </span>
+                                    <span className="text-black font-semibold cursor-pointer">+1 800-123-4567 </span>
                                 </div>
                             </button>
-                        </li>
-                        <li className="flex items-start gap-3 group">
-                            {/* <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
-                                <Mail size={18} className="text-yellow-500 group-hover:text-black" />
-                            </div> */}
-                            {/* <div>
-                                <p className="text-xs text-black uppercase">Email Support</p>
-                                <span className="text-gray-200 font-semibold">support@railtickets.com</span>
-                            </div> */}
                         </li>
                     </ul>
                 </div>
 
 
-                <div>
+                {/* <div>
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">
                         Call
                     </h3>
@@ -92,7 +83,7 @@ export default function Footer() {
                     <div className="mt-6 flex items-center gap-2 text-[10px] font-bold text-black uppercase tracking-widest">
                         <Train size={14} className="text-yellow-500" /> Secure Rail Booking
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

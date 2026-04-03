@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapPin, Calendar, Users, Train, ShieldCheck, Globe, User, Phone, Mail } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import TrainDestinationsPage from './TrainDesPage';
 import TestimonialsPage from './TestimonialPage';
 import FAQPage from './FaqPage';
@@ -7,6 +8,49 @@ import AboutUsPage from './AboutPage';
 
 export default function HomePage() {
 
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        from: "",
+        to: "",
+        date: "",
+        travelers: "",
+        message: "New Booking Request"
+    })
+
+    function handleChange(e) {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    function sendEmail(e) {
+        e.preventDefault()
+
+        emailjs.send(
+            "service_k1165nd", //service code
+            "template_pq3gl9d", //templatecode
+            formData,
+            "6kEM-oze_O9hklHXN"  //public Key
+        )
+            .then(() => {
+                alert("Booking Sent")
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    from: "",
+                    to: "",
+                    date: "",
+                    travels: "",
+                })
+            }).catch((err) => {
+                console.log(err)
+                alert("Error")
+            });
+    }
 
 
     return (
@@ -64,7 +108,7 @@ export default function HomePage() {
 
                                     <div>
                                         <button
-                                            onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                                            onClick={() => window.gtag_report_conversion('tel:+18001234567')}
                                             className="py-3 cursor-pointer bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40"
                                         >
                                             Call Us
@@ -91,7 +135,7 @@ export default function HomePage() {
                                     </div>
                                 </div>
 
-                                <div className="space-y-4">
+                                <form onSubmit={sendEmail} className="space-y-4">
 
                                     <div>
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">
@@ -101,6 +145,9 @@ export default function HomePage() {
                                             <User className="text-yellow-400 mr-3" size={18} />
                                             <input
                                                 type="text"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                name="name"
                                                 placeholder="Enter Your Name"
                                                 className="bg-transparent outline-none text-white w-full placeholder:text-slate-500"
                                             />
@@ -117,6 +164,9 @@ export default function HomePage() {
                                                 <Mail className="text-yellow-400 mr-3" size={18} />
                                                 <input
                                                     type="email"
+                                                    name='email'
+                                                    value={formData.email}
+                                                    onChange={handleChange}
                                                     placeholder="Enter Email"
                                                     className="bg-transparent outline-none text-white w-full placeholder:text-slate-500"
                                                 />
@@ -131,7 +181,10 @@ export default function HomePage() {
                                                 <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
                                                     <Phone className="text-yellow-400 mr-3" size={18} />
                                                     <input
+                                                        value={formData.phone}
+                                                        onChange={handleChange}
                                                         type="tel"
+                                                        name='phone'
                                                         placeholder="Enter Mobile Number"
                                                         className="bg-transparent outline-none text-white w-full placeholder:text-slate-500"
                                                     />
@@ -145,7 +198,11 @@ export default function HomePage() {
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">From</label>
                                         <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
                                             <MapPin className="text-yellow-400 mr-3" size={18} />
-                                            <input type="text" placeholder="Origin City" className="bg-transparent outline-none text-white w-full placeholder:text-slate-500" />
+                                            <input type="text"
+                                                name='from'
+                                                value={formData.from}
+                                                onChange={handleChange}
+                                                placeholder="Origin City" className="bg-transparent outline-none text-white w-full placeholder:text-slate-500" />
                                         </div>
                                     </div>
 
@@ -153,7 +210,7 @@ export default function HomePage() {
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">To</label>
                                         <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
                                             <Globe className="text-yellow-400 mr-3" size={18} />
-                                            <input type="text" placeholder="Destination City" className="bg-transparent outline-none text-white w-full placeholder:text-slate-500" />
+                                            <input name='to' value={formData.to} onChange={handleChange} type="text" placeholder="Destination City" className="bg-transparent outline-none text-white w-full placeholder:text-slate-500" />
                                         </div>
                                     </div>
 
@@ -163,7 +220,7 @@ export default function HomePage() {
                                             <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">Date</label>
                                             <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
                                                 <Calendar className="text-yellow-400 mr-3" size={18} />
-                                                <input type="date" className="bg-transparent outline-none text-white w-full text-sm  [color-scheme:dark]" />
+                                                <input name='date' value={formData.date} onChange={handleChange} type="date" className="bg-transparent outline-none text-white w-full text-sm  [color-scheme:dark]" />
                                             </div>
                                         </div>
 
@@ -171,7 +228,7 @@ export default function HomePage() {
                                             <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">Travelers</label>
                                             <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
                                                 <Users className="text-yellow-400 mr-3" size={18} />
-                                                <select className="bg-transparent text-white w-full outline-none text-sm">
+                                                <select name='travelers' value={formData.travelers} onChange={handleChange} className="bg-transparent text-white w-full outline-none text-sm">
                                                     <option className="bg-slate-900">1 Adult</option>
                                                     <option className="bg-slate-900">2 Adults</option>
                                                     <option className="bg-slate-900">Family</option>
@@ -180,11 +237,11 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    <button className="w-full py-4 px-3 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-black text-lg rounded-xl transition-all shadow-[0_10px_40px_rgba(250,204,21,0.5)] flex items-center justify-center gap-3 active:scale-[0.98]">
+                                    <button type='submit' className="w-full py-4 px-3 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-black text-lg rounded-xl transition-all shadow-[0_10px_40px_rgba(250,204,21,0.5)] flex items-center justify-center gap-3 active:scale-[0.98]">
                                         Book Now
                                     </button>
 
-                                </div>
+                                </form>
 
                             </div>
                         </div>

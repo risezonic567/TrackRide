@@ -87,7 +87,7 @@ export default function TrainRoutes() {
                                         <span className="text-lg text-amber-600 mr-1">$</span>{route.price}
                                     </div>
 
-                                    <button onClick={() => window.gtag_report_conversion('tel:+18663075957')} className="bg-amber-400 cursor-pointer hover:bg-slate-900 hover:text-amber-400 text-slate-900 px-8 py-3 rounded-xl font-black text-sm uppercase transition-all duration-300 shadow-md transform hover:scale-105">
+                                    <button onClick={() => window.gtag_report_conversion('tel:+18001234567')} className="bg-amber-400 cursor-pointer hover:bg-slate-900 hover:text-amber-400 text-slate-900 px-8 py-3 rounded-xl font-black text-sm uppercase transition-all duration-300 shadow-md transform hover:scale-105">
                                             Book Now
                                     </button>
 

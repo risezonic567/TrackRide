@@ -60,7 +60,7 @@ export default function AboutUsPage() {
                             </div>
                             <div className="mx-auto">
                                 <button
-                                    onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                                    onClick={() => window.gtag_report_conversion('tel:+18001234567')}
                                     className="text-2xl py-2 cursor-pointer bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40"
                                 >
                                     Call Us
@@ -105,7 +105,7 @@ export default function AboutUsPage() {
                     "Our team is ready to answer all your questions 24 hours a day."
                 </p>
                 <button
-                    onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                    onClick={() => window.gtag_report_conversion('tel:+18001234567')}
                     className="px-10 py-4 cursor-pointer bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95"
                 >
                     Connect With Our Experts
