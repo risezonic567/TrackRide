@@ -3,17 +3,17 @@ import { MapPin, Calendar, Users, Train, ShieldCheck, Globe, User, Phone, Mail }
 import TrainDestinationsPage from './TrainDesPage';
 import TestimonialsPage from './TestimonialPage';
 import FAQPage from './FaqPage';
-import { Link } from 'react-router-dom';
 import AboutUsPage from './AboutPage';
 
 export default function HomePage() {
+
+
 
     return (
         <>
             <section id='home'>
                 <div className="relative w-full min-h-screen overflow-hidden font-sans bg-slate-950">
 
-                    {/* Background */}
                     <div className="absolute inset-0 z-0">
                         <div
                             className="absolute inset-0 bg-cover bg-center scale-105"
@@ -22,12 +22,10 @@ export default function HomePage() {
                         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
                     </div>
 
-                    {/* Content */}
                     <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 min-h-screen flex flex-col justify-center">
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-                            {/* LEFT */}
                             <div className="space-y-8">
                                 <div className="space-y-5">
 
@@ -47,10 +45,8 @@ export default function HomePage() {
                                     </p>
                                 </div>
 
-                                {/* Stats */}
                                 <div className="border-t border-white/10 pt-6 space-y-6">
 
-                                    {/* Stats Row */}
                                     <div className="flex gap-10">
                                         <div>
                                             <h4 className="text-yellow-400 font-bold text-xl">500+</h4>
@@ -66,7 +62,6 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    {/* Button Bottom */}
                                     <div>
                                         <button
                                             onClick={() => window.gtag_report_conversion('tel:+18663075957')}
@@ -82,10 +77,8 @@ export default function HomePage() {
                             </div>
 
 
-                            {/* RIGHT CARD */}
                             <div className="bg-white/10 backdrop-blur-3xl border border-white/20 p-8 rounded-[2rem] shadow-[0_20px_80px_rgba(0,0,0,0.6)] space-y-6">
 
-                                {/* Header */}
                                 <div className="flex items-center justify-between">
                                     <h3 className="text-xl font-bold text-white flex items-center gap-2">
                                         <Train className="text-yellow-400" /> Plan Your Trip
@@ -98,10 +91,8 @@ export default function HomePage() {
                                     </div>
                                 </div>
 
-                                {/* Inputs */}
                                 <div className="space-y-4">
 
-                                    {/* NAME */}
                                     <div>
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">
                                             Name
@@ -116,10 +107,8 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    {/* CONTACT (EMAIL + PHONE) */}
                                     <div className="grid grid-cols-2 gap-4">
 
-                                        {/* EMAIL */}
                                         <div>
                                             <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">
                                                 Email
@@ -134,7 +123,6 @@ export default function HomePage() {
                                             </div>
                                         </div>
 
-                                        {/* PHONE */}
                                         <div>
                                             <div>
                                                 <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">
@@ -153,7 +141,6 @@ export default function HomePage() {
 
                                     </div>
 
-                                    {/* FROM */}
                                     <div>
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">From</label>
                                         <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
@@ -162,7 +149,6 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    {/* TO */}
                                     <div>
                                         <label className="text-[10px] uppercase font-bold text-slate-400 ml-2 mb-1 block">To</label>
                                         <div className="flex items-center bg-slate-900/60 border border-white/10 rounded-xl px-4 py-3 focus-within:border-yellow-400">
@@ -171,7 +157,6 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    {/* DATE + TRAVELERS */}
                                     <div className="grid grid-cols-2 gap-4">
 
                                         <div>
@@ -195,7 +180,6 @@ export default function HomePage() {
                                         </div>
                                     </div>
 
-                                    {/* BUTTON */}
                                     <button className="w-full py-4 px-3 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-black text-lg rounded-xl transition-all shadow-[0_10px_40px_rgba(250,204,21,0.5)] flex items-center justify-center gap-3 active:scale-[0.98]">
                                         Book Now
                                     </button>

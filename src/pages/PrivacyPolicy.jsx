@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function PrivacyPolicy() {
     return (
@@ -15,12 +14,10 @@ export default function PrivacyPolicy() {
                     collect, use, and protect your information when you use our platform.
                 </p>
 
-                {/* Section 1 */}
                 <p className="text-gray-600 mb-4">
                     At Airlines Ticket Booking (Rail Division), we are committed to protecting your privacy while providing a smooth and reliable train booking experience across the United States. This Privacy Policy explains how we collect, use, and safeguard your information when you use our platform.
                 </p>
 
-                {/* Section 1 */}
                 <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
                     1. Information We Collect
                 </h2>
@@ -28,7 +25,6 @@ export default function PrivacyPolicy() {
                     When you book train tickets across the USA, we may collect personal details such as your full name, email address, phone number, travel preferences, and payment information. This helps us ensure accurate bookings and a seamless travel experience.
                 </p>
 
-                {/* Section 2 */}
                 <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
                     2. How We Use Your Information
                 </h2>
@@ -36,7 +32,6 @@ export default function PrivacyPolicy() {
                     Your information is used to confirm train reservations, send booking updates, provide customer support, and improve our services. We may also use your contact details to notify you about schedule changes or important travel updates.
                 </p>
 
-                {/* Section 3 */}
                 <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
                     3. Data Security
                 </h2>
@@ -44,7 +39,6 @@ export default function PrivacyPolicy() {
                     We implement industry-standard security measures to protect your personal data. All transactions are encrypted, ensuring that your booking and payment information remains safe and secure.
                 </p>
 
-                {/* Section 4 */}
                 <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
                     4. Sharing of Information
                 </h2>
@@ -52,7 +46,6 @@ export default function PrivacyPolicy() {
                     We do not sell your personal data. Your information may be shared only with trusted railway partners and service providers within the USA to complete your booking and provide essential travel services.
                 </p>
 
-                {/* Section 5 */}
                 <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">
                     5. Your Rights
                 </h2>
@@ -60,7 +53,6 @@ export default function PrivacyPolicy() {
                     You have the right to access, update, or request deletion of your personal data. You can contact our support team at any time for assistance regarding your information.
                 </p>
 
-                {/* Contact Us Section */}
                 <div className="mt-10 bg-gray-100 rounded-xl p-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
                         Contact Us
@@ -68,16 +60,6 @@ export default function PrivacyPolicy() {
                     <p className="text-gray-600 mb-2">
                         If you have any questions about this Privacy Policy, feel free to contact us:
                     </p>
-
-                    {/* <p className="text-gray-700">
-                        📧 Email:{" "}
-                        <a
-                            href="mailto:support@yourcompany.com"
-                            className="text-blue-600 hover:underline"
-                        >
-                            support@yourcompany.com
-                        </a>
-                    </p> */}
 
                     <p className="text-gray-700">
                         📞 Phone:{" "}
@@ -92,7 +74,6 @@ export default function PrivacyPolicy() {
 
                 </div>
 
-                {/* Footer */}
                 <div className="mt-8 border-t pt-4">
                     <p className="text-gray-500 text-sm">
                         Last updated: {new Date().toLocaleDateString()}

@@ -6,7 +6,6 @@ export default function Footer() {
         <footer className="bg-white/50 mt-10 text-black pt-16 pb-8 border-t-4 border-yellow-500">
             <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12">
 
-                {/* Logo & About */}
                 <div className="space-y-6">
                     <div className="flex items-center gap-2">
                         <img
@@ -29,7 +28,7 @@ export default function Footer() {
                             { name: 'About Us', path: '/#about' },
                             { name: 'Train Routes', path: '/train-routes' },
                             { name: 'Privacy Policy', path: '/privacy-policy' },
-                            // { name: 'Terms of Service', path: '/' }
+                           
                         ].map((link) => (            // this
                             <li key={link.name}>
 
@@ -46,7 +45,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Contact Info */}
                 <div>
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
@@ -73,7 +71,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Newsletter */}
 
                 <div>
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">
@@ -82,19 +79,16 @@ export default function Footer() {
 
                     <p className="text-xs mb-2">Enter Your Phone Number</p>
 
-                    {/* Input full width */}
                     <input
                         type="text"
                         placeholder="Phone Number"
                         className="bg-white border text-black border-slate-800 rounded-lg px-4 py-2 w-full focus:outline-none focus:border-yellow-500 text-sm"
                     />
 
-                    {/* Button niche */}
                     <button className="bg-yellow-500 cursor-pointer text-black px-4 py-2 mt-3 w-full rounded-lg font-bold hover:bg-yellow-400 transition-colors">
                         Call to Book
                     </button>
 
-                    {/* Bottom text */}
                     <div className="mt-6 flex items-center gap-2 text-[10px] font-bold text-black uppercase tracking-widest">
                         <Train size={14} className="text-yellow-500" /> Secure Rail Booking
                     </div>
@@ -102,7 +96,6 @@ export default function Footer() {
 
             </div>
 
-            {/* Bottom Bar */}
             <div className="border-t border-black mt-16 pt-8 container mx-auto px-6 lg:px-16">
                 <div className="flex flex-col  justify-between items-center gap-4">
                     <p className="text-sm  text-black">

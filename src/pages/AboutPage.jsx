@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Train, Users, Globe, Award, ShieldCheck, Heart } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function AboutUsPage() {
     const stats = [
@@ -13,7 +12,6 @@ export default function AboutUsPage() {
 
     return (
         <section className="bg-white font-sans mt-10">
-            {/* Simple Hero Section */}
             <div className="bg-black/60 py-24 px-6 text-center border-b-4 border-yellow-500">
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}
@@ -28,7 +26,6 @@ export default function AboutUsPage() {
                 </p>
             </div>
 
-            {/* Content Section: Story & Image */}
             <div className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <motion.div
@@ -88,7 +85,6 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
-            {/* Fast Stats Bar */}
             <div className="bg-slate-950 py-16">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
                     {stats.map((stat, i) => (
@@ -103,7 +99,6 @@ export default function AboutUsPage() {
                 </div>
             </div>
 
-            {/* Bottom Contact CTA */}
             <div className="py-20 text-center bg-gray-50">
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Have Questions?</h3>
                 <p className="text-gray-500 mb-8 max-w-lg mx-auto italic">
