@@ -42,14 +42,13 @@ export default function Navbar() {
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-3">
 
-            {/* CALL BUTTON */}
-            <HashLink
-              to="tel:+1 866 307 5957"
-              className="hidden sm:flex bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-800 transition"
+            <button
+              onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+              className="hidden sm:flex cursor-pointer items-center gap-2 bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-800 transition"
             >
-              <Phone size={20} />+1 866 307 5957
-            </HashLink>
-
+              <Phone size={20} />
+              +1 866 307 5957
+            </button>
             {/* MOBILE MENU BUTTON */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -84,9 +83,8 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`lg:hidden transition-all duration-300 ${
-          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-        }`}
+        className={`lg:hidden transition-all duration-300 ${isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          }`}
       >
         <nav className="bg-gray-50 border-t px-4 pb-4">
           <ul className="space-y-2">

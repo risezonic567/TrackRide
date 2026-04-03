@@ -61,9 +61,12 @@ export default function AboutUsPage() {
                                 </div>
                                 <p className="text-sm font-bold text-slate-900 leading-tight">Industry Leading Tech</p>
                             </div>
-                            <div className='mx-auto'>
-                                <button className='py-2  bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40'>
-                                    <Link to="tel:+1 866 307 5957" className='text-2xl'>Call Us</Link>
+                            <div className="mx-auto">
+                                <button
+                                    onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                                    className="text-2xl py-2 cursor-pointer bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40"
+                                >
+                                    Call Us
                                 </button>
                             </div>
                         </div>
@@ -106,11 +109,13 @@ export default function AboutUsPage() {
                 <p className="text-gray-500 mb-8 max-w-lg mx-auto italic">
                     "Our team is ready to answer all your questions 24 hours a day."
                 </p>
-                <button className="px-10 py-4 bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95">
-                    <Link to="tel:+1 866 307 5957 ">
-                        Connect With Our Experts
-                    </Link>
+                <button
+                    onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                    className="px-10 py-4 cursor-pointer bg-yellow-500 text-black font-black rounded-xl hover:bg-yellow-400 transition-all shadow-lg active:scale-95"
+                >
+                    Connect With Our Experts
                 </button>
+
             </div>
         </section>
     );

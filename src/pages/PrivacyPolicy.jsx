@@ -81,13 +81,13 @@ export default function PrivacyPolicy() {
 
                     <p className="text-gray-700">
                         📞 Phone:{" "}
-                        <a
-                            href="tel:+1 866 307 5957"
-                            className="text-yellow-600 hover:underline"
+                        <button
+                            onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                            className="text-yellow-600 cursor-pointer hover:underline"
                         >
                             +1 866 307 5957
 
-                        </a>
+                        </button>
                     </p>
 
                 </div>

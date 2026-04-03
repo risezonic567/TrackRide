@@ -51,15 +51,15 @@ export default function Footer() {
                     <h3 className="text-yellow-500 text-lg font-bold mb-6 uppercase tracking-wider">Support</h3>
                     <ul className="space-y-4 text-sm">
                         <li>
-                            <HashLink to="tel:+1 866 307 5957" className="flex items-start gap-3 group">
+                            <button onClick={() => window.gtag_report_conversion('tel:+18663075957')} className="flex items-start gap-3 group">
                                 <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
                                     <Phone size={18} className="text-yellow-500 group-hover:text-black" />
                                 </div>
                                 <div>
                                     <p className="text-xs text-black uppercase">Call Us Anytime</p>
-                                    <span className="text-black font-semibold">+1 866 307 5957 </span>
+                                    <span className="text-black font-semibold cursor-pointer">+1 866 307 5957 </span>
                                 </div>
-                            </HashLink>
+                            </button>
                         </li>
                         <li className="flex items-start gap-3 group">
                             {/* <div className="p-2 bg-black rounded-lg group-hover:bg-yellow-500 transition-colors">
@@ -90,7 +90,7 @@ export default function Footer() {
                     />
 
                     {/* Button niche */}
-                    <button className="bg-yellow-500 text-black px-4 py-2 mt-3 w-full rounded-lg font-bold hover:bg-yellow-400 transition-colors">
+                    <button className="bg-yellow-500 cursor-pointer text-black px-4 py-2 mt-3 w-full rounded-lg font-bold hover:bg-yellow-400 transition-colors">
                         Call to Book
                     </button>
 

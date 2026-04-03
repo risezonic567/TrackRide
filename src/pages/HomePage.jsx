@@ -48,26 +48,39 @@ export default function HomePage() {
                                 </div>
 
                                 {/* Stats */}
-                                <div className="flex gap-10 border-t border-white/10 pt-6">
-                                    <div>
-                                        <h4 className="text-yellow-400 font-bold text-xl">500+</h4>
-                                        <p className="text-slate-400 text-sm">Destinations</p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-yellow-400 font-bold text-xl">24/7</h4>
-                                        <p className="text-slate-400 text-sm">Support</p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-yellow-400 font-bold text-xl">100%</h4>
-                                        <p className="text-slate-400 text-sm">Secure Pay</p>
+                                <div className="border-t border-white/10 pt-6 space-y-6">
+
+                                    {/* Stats Row */}
+                                    <div className="flex gap-10">
+                                        <div>
+                                            <h4 className="text-yellow-400 font-bold text-xl">500+</h4>
+                                            <p className="text-slate-400 text-sm">Destinations</p>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-yellow-400 font-bold text-xl">24/7</h4>
+                                            <p className="text-slate-400 text-sm">Support</p>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-yellow-400 font-bold text-xl">100%</h4>
+                                            <p className="text-slate-400 text-sm">Secure Pay</p>
+                                        </div>
                                     </div>
 
+                                    {/* Button Bottom */}
+                                    <div>
+                                        <button
+                                            onClick={() => window.gtag_report_conversion('tel:+18663075957')}
+                                            className="py-3 cursor-pointer bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40"
+                                        >
+                                            Call Us
+                                        </button>
+                                    </div>
 
                                 </div>
-                                <button className="py-3 px-8 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-semibold rounded-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98] w-40">
-                                    <Link to="tel:+1 866 307 5957" className='text-2xl'>Call Us</Link>
-                                </button>
+
+
                             </div>
+
 
                             {/* RIGHT CARD */}
                             <div className="bg-white/10 backdrop-blur-3xl border border-white/20 p-8 rounded-[2rem] shadow-[0_20px_80px_rgba(0,0,0,0.6)] space-y-6">
@@ -184,7 +197,7 @@ export default function HomePage() {
 
                                     {/* BUTTON */}
                                     <button className="w-full py-4 px-3 bg-gradient-to-r from-yellow-400 to-orange-400 hover:scale-[1.02] text-black font-black text-lg rounded-xl transition-all shadow-[0_10px_40px_rgba(250,204,21,0.5)] flex items-center justify-center gap-3 active:scale-[0.98]">
-                                        <Link to="tel:+1 866 307 5957 "> Book Now</Link>
+                                        Book Now
                                     </button>
 
                                 </div>

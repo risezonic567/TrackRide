@@ -99,7 +99,7 @@ export default function FAQPage() {
                         <div>
                             <h4 className="text-xl font-bold text-white mb-2">Call Support</h4>
                             <p className="text-sm text-gray-400 mb-4">Available 24/7 for urgent booking issues.</p>
-                            <Link to="tel:+1 866 307 5957 " className="text-yellow-500 font-bold text-sm hover:underline">+1 866 307 5957 →</Link>
+                            <button onClick={() => window.gtag_report_conversion('tel:+18663075957')} className=" cursor-pointer text-yellow-500 font-bold text-sm hover:underline">+1 866 307 5957 →</button>
                         </div>
                     </div>
                 </div>
