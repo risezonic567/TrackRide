@@ -43,11 +43,11 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
 
             <button
-              onClick={() => window.gtag_report_conversion('tel:+1800-123-4567')}
+              onClick={() => window.gtag_report_conversion('tel:800-123-4567')}
               className="hidden sm:flex cursor-pointer items-center gap-2 bg-yellow-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-800 transition"
             >
               <Phone size={20} />
-              +1 800-123-4567
+              800-123-4567
             </button>
             {/* MOBILE MENU BUTTON */}
             <button
