@@ -15,7 +15,7 @@ export default function Footer() {
                         />
                     </div>
                     <p className="text-sm leading-relaxed">
-                        Redefining rail travel with seamless booking, premium comfort, and
+                        Redefining rails travel with seamless booking, premium comfort, and
                         unbeatable fares across the nation. Your journey, our priority.
                     </p>
                 </div>

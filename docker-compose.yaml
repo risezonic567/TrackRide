@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  forntend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3900:80"  
+    container_name: trackride-frontend  
+    restart: always
