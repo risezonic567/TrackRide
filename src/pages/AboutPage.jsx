@@ -22,7 +22,7 @@ export default function AboutUsPage() {
                 </motion.h1>
                 <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
                     Making rail travel accessible, affordable, and comfortable for everyone.
-                    From local commutes to cross-country adventures.
+                    From local commutes to cross-country adventure.
                 </p>
             </div>
 
